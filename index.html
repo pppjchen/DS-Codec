@@ -42,7 +42,8 @@
 
     <br><br>
     <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-    <p> The multi-codebook speech codec enables the application of large language models (LLM) in TTS but bottlenecks efficiency and robustness due to multi-sequence prediction. To avoid this obstacle, we propose Single-Codec, a single-codebook single-sequence codec, which employs a disentangled VQ-VAE to decouple speech into a time-invariant embedding and a phonetically-rich discrete sequence. Furthermore, the encoder is enhanced with 1) contextual modeling with a BLSTM module to exploit the temporal information, 2) a hybrid sampling module to alleviate distortion from upsampling and downsampling, and 3) a resampling module to encourage discrete units to carry more phonetic information. Compared with multi-codebook codecs, e.g., EnCodec and TiCodec, Single-Codec demonstrates higher reconstruction quality with a lower bandwidth of only 304bps. The effectiveness of Single-Code is further validated by LLM-TTS experiments, showing improved naturalness and intelligibility.
+    <p> 
+      Neural speech codecs are essential for advancing text-to-speech (TTS) systems. With the recent success of large language models in text generation, developing high-quality speech tokenizers has become increasingly important. This paper introduces DS-Codec, a novel neural speech codec featuring a dual-stage training framework with mirror and non-mirror architectures switching, designed to achieve superior speech reconstruction. We conduct extensive experiments and ablation studies to evaluate the effectiveness of our training strategy and compare the performance of the two architectures. Our results show that the mirrored structure significantly enhances the robustness of the learned codebooks, and the training strategy balances the advantages between mirrored and non-mirrored structures, leading to improved high-fidelity speech reconstruction.
     </p>
 
     <!-- <br><br> -->
@@ -55,7 +56,7 @@
     <h2 id="Comprison">2. Samples on Audio Reconstruction: Comparison with Models <a name="Comprison"></a></h2>
 
     <table>
-      <tr><th>GT</th><th>DAC-8</th><th>Encodec-8</th><th>Ticodec-4</th><th>encodec-1.5</th><th>Ticodec-2</th><th>DAC-1</th><th>Ticodec-1</th><th>Wavtokenizer</th><th>Bigcodec</th><th>DS-Codec-PQ</th><th>DS-Codec-VQ</th></tr>
+      <tr><th>GT</th><th>DAC-8</th><th>Encodec-8</th><th>Ticodec-4</th><th>Encodec-2</th><th>Ticodec-2</th><th>DAC-1</th><th>Ticodec-1</th><th>Wavtokenizer</th><th>Bigcodec</th><th>DS-Codec-PQ</th><th>DS-Codec-VQ</th></tr>
       <tr>
       <td><audio controls><source src="audio/GT/61-70968-0000.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0000.flac" type="audio/wav"></audio></td>
