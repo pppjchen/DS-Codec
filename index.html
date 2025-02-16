@@ -31,15 +31,8 @@
       <center>DS-Codec: Dual-Stage Training With Mirror-to-NonMirror Architecture Switching for Speech Codec</center>
     </h1>
 
-    <!-- <center> Hanzhao Li<sup>1</sup>, Liumeng Xue<sup>2</sup>, Haohan Guo<sup>3</sup>, Xinfa Zhu<sup>1</sup>, Yuanjun Lv<sup>1</sup>,  Lei Xie<sup>1</sup> </center>
-    <center>  Yunlin Chen<sup>4</sup>,  Hao Yin<sup>4</sup>,  Zhifei Li<sup>4</sup> </center> -->
-
     <p></p>
-      
-    <!-- <center> <sup>1</sup>Audio, Speech and Language Processing Group (ASLP@NPU), School of Computer Science, Northwestern Polytechnical University, Xi'an, China<br /></center>
-    <center> <sup>2</sup>School of Data Science, The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen), China</center>
-    <center> <sup>3</sup>The Chinese University of Hong Kong, Hong Kong SAR, China</center>
-    <center> <sup>4</sup>Shanghai Mobvoi Information Technology Co., Ltd</center> -->
+
 
     <h2>0. Contents</h2>
     <ol>
@@ -63,16 +56,16 @@
 
     <table>
       <tr>
-      <th>GT</th><th>DAC-8</th><th>Encodec-8</th><th>Ticodec-4</th><th>Encodec-2</th><th>Ticodec-2</th><th>DAC-1</th><th>Ticodec-1</th><th>Wavtokenizer</th><th>Bigcodec</th><th>DS-Codec-PQ</th><th>DS-Codec-VQ</th></tr>
+      <th>GT</th><th>DAC-8</th><th>Encodec-8</th><th>Ticodec-4</th><th>DAC-1</th><th>Ticodec-1</th><th>Wavtokenizer</th><th>Bigcodec</th><th>DS-Codec-PQ</th><th>DS-Codec-VQ</th></tr>
       <tr>
       <td><audio controls><source src="audio/GT/61-70968-0000.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0000.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/encodec-8/61-70968-0000.flac" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/Ticodec-4r/61-70968-0000.flac" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/encodec-2/61-70968-0000.flac" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/Ticodec-2r/61-70968-0000.flac" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/Ticodec-4r/61-70968-0000.wav" type="audio/wav"></audio></td>
+      <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0000.flac" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/Ticodec-2r/61-70968-0000.wav" type="audio/wav"></audio></td> -->
       <td><audio controls><source src="audio/dac-1n/61-70968-0000.flac" type="audio/wav"></audio></td>
-      <td><audio controls><source src="audio/Ticodec-1r/61-70968-0000.flac" type="audio/wav"></audio></td>
+      <td><audio controls><source src="audio/Ticodec-1r/61-70968-0000.wav" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/wavtokenizer/61-70968-0000.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/bigcodec/61-70968-0000.flac" type="audio/wav"></audio></td></tr>
       <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0000.flac" type="audio/wav"></audio></td></tr>
@@ -81,11 +74,11 @@
         <td><audio controls><source src="audio/GT/61-70968-0001.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/dac-8n/61-70968-0001.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/61-70968-0001.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0001.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/61-70968-0001.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0001.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0001.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0001.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0001.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/61-70968-0001.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0001.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0001.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/61-70968-0001.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/bigcodec/61-70968-0001.flac" type="audio/wav"></audio></td></tr>
         <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0001.flac" type="audio/wav"></audio></td></tr>
@@ -94,11 +87,11 @@
       <td><audio controls><source src="audio/GT/61-70968-0002.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0002.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/61-70968-0002.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0002.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/61-70968-0002.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0002.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0002.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0002.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0002.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/61-70968-0002.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0002.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0002.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/61-70968-0002.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/bigcodec/61-70968-0002.flac" type="audio/wav"></audio></td></tr>
         <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0002.flac" type="audio/wav"></audio></td></tr>
@@ -107,11 +100,11 @@
       <td><audio controls><source src="audio/GT/61-70968-0003.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0003.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/61-70968-0003.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0003.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/61-70968-0003.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0003.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0003.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0003.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0003.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/61-70968-0003.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0003.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0003.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/61-70968-0003.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/bigcodec/61-70968-0003.flac" type="audio/wav"></audio></td></tr>
         <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0003.flac" type="audio/wav"></audio></td></tr>
@@ -120,11 +113,11 @@
       <td><audio controls><source src="audio/GT/61-70968-0004.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0004.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/61-70968-0004.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0004.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/61-70968-0004.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0004.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0004.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0004.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0004.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/61-70968-0004.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0004.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0004.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/61-70968-0004.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/bigcodec/61-70968-0004.flac" type="audio/wav"></audio></td></tr>
         <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0004.flac" type="audio/wav"></audio></td></tr>
@@ -133,11 +126,11 @@
       <td><audio controls><source src="audio/GT/61-70968-0005.flac" type="audio/wav"></audio></td>
       <td><audio controls><source src="audio/dac-8n/61-70968-0005.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/61-70968-0005.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0005.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/61-70968-0005.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0005.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-4r/61-70968-0005.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/61-70968-0005.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/61-70968-0005.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/61-70968-0005.flac" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0005.flac" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-1r/61-70968-0005.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/61-70968-0005.flac" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/bigcodec/61-70968-0005.flac" type="audio/wav"></audio></td></tr>
         <td><audio controls><source src="audio/DS-Codec-PQ/61-70968-0005.flac" type="audio/wav"></audio></td></tr>
@@ -147,8 +140,8 @@
       <td><audio controls><source src="audio/dac-8n/LJ001-0002.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/LJ001-0002.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-4r/LJ001-0002.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/LJ001-0002.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0002.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/LJ001-0002.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0002.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/LJ001-0002.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-1r/LJ001-0002.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/LJ001-0002.wav" type="audio/wav"></audio></td>
@@ -160,8 +153,8 @@
       <td><audio controls><source src="audio/dac-8n/LJ001-0008.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/LJ001-0008.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-4r/LJ001-0008.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/LJ001-0008.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0008.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/LJ001-0008.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0008.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/LJ001-0008.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-1r/LJ001-0008.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/LJ001-0008.wav" type="audio/wav"></audio></td>
@@ -173,8 +166,8 @@
       <td><audio controls><source src="audio/dac-8n/LJ001-0011.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/LJ001-0011.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-4r/LJ001-0011.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/LJ001-0011.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0011.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/LJ001-0011.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0011.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/LJ001-0011.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-1r/LJ001-0011.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/LJ001-0011.wav" type="audio/wav"></audio></td>
@@ -186,8 +179,8 @@
       <td><audio controls><source src="audio/dac-8n/LJ001-0017.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/encodec-8/LJ001-0017.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-4r/LJ001-0017.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/encodec-2/LJ001-0017.wav" type="audio/wav"></audio></td>
-        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0017.wav" type="audio/wav"></audio></td>
+        <!-- <td><audio controls><source src="audio/encodec-2/LJ001-0017.wav" type="audio/wav"></audio></td>
+        <td><audio controls><source src="audio/Ticodec-2r/LJ001-0017.wav" type="audio/wav"></audio></td> -->
         <td><audio controls><source src="audio/dac-1n/LJ001-0017.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/Ticodec-1r/LJ001-0017.wav" type="audio/wav"></audio></td>
         <td><audio controls><source src="audio/wavtokenizer/LJ001-0017.wav" type="audio/wav"></audio></td>
@@ -196,9 +189,9 @@
         <td><audio controls><source src="audio/DS-Codec-VQ/LJ001-0017.wav" type="audio/wav"></audio></td></tr></tr>
       </table>
       
-      <h2 id="Reconstruction">3. Samples on Audio Reconstruction: Comparison Study <a name="Reconstruction"></a></h2>
+      <!-- <h2 id="Reconstruction">3. Samples on Audio Reconstruction: Comparison Study <a name="Reconstruction"></a></h2> -->
 
-      <table>
+      <!-- <table>
         <tr>
         <th>GT</th><th>VQVAE</th><th>EnCodec-1VQ</th><th>TiCodec-1VQ</th><th>TiCodec-2VQ</th><th>Single-Codec</th></tr>
         <tr>
@@ -223,7 +216,7 @@
         <td><audio controls><source src="demos/codec_GT/SSB00570227.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_VQVAE/SSB00570227.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_EnCodec-1VQ/SSB00570227.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_TiCodec-1VQ/SSB00570227.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_TiCodec-2VQ/SSB00570227.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_Single-Codec/SSB00570227.wav" type="audio/wav"></audio></td></tr>
         <tr>
         <td><audio controls><source src="demos/codec_GT/SSB00570260.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_VQVAE/SSB00570260.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_EnCodec-1VQ/SSB00570260.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_TiCodec-1VQ/SSB00570260.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_TiCodec-2VQ/SSB00570260.wav" type="audio/wav"></audio></td><td><audio controls><source src="demos/codec_Single-Codec/SSB00570260.wav" type="audio/wav"></audio></td></tr>
-        </table>
+        </table> -->
         
 
         
